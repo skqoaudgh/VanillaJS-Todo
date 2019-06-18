@@ -30,6 +30,7 @@ body {
     padding-left: 10px;
     padding-right: 65px;
     outline: none;
+    border: none;
 }
 
 .todo-input #add-button {
@@ -49,11 +50,11 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    left: -2px;
+    left: -2.5px;
     margin-top: 20px;
     background: white;
-    width: 439px;
-    height: 80px;
+    width: 435.5px;
+    height: 10px;
     padding: 20px;
 }
 
