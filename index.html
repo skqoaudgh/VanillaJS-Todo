@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <title>VanillaJS Todo List</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <title>VanillaJS Todo List</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <p>TO-DO LIST</p>
+            <div class="todo-input">
+                <form>
+                    <input type="text" id="add-text" placeholder="새로운 할 일"></input>
+                    <button type="button" id="add-button">ADD</button>
+                </form>
+            </div>
+        </div>
+        <div class="todo-list">
+            <div class="todo-comp">
+                <button type="button" id="comp-delete">X</button>
+                <input type="checkbox" id="comp-check">
+                할 일
+            </div>
+            <div class="todo-line">
+                <hr>
+            </div>
+        </div>
+        <button type="button" id="comp-clear">Clear</button>
+    </body>
     <script type="text/javascript" src="script/script.js"></script>
 </html>
