@@ -54,7 +54,7 @@ body {
     margin-top: 20px;
     background: white;
     width: 435.5px;
-    height: 10px;
+    height: 40px;
     padding: 20px;
 }
 
@@ -70,10 +70,10 @@ body {
 
 .todo-comp button {
     all: unset;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background: #4875d4;
-    padding: 1px 4px;
+    padding: 2px 4px;
     cursor: pointer;
 }
 
@@ -82,11 +82,13 @@ body {
     top: 2px;
     width: 15px;
     height: 15px;
+    margin-right: 10px;
 }
 
 .todo-line hr {
     color: #ffa6a6;
     border: thin solid #ffa6a6;
+    margin-bottom: 20px;
 }
 
 #comp-clear {
