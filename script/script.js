@@ -122,7 +122,7 @@ function checkBoxHandler(event) {
 
 function loadHandler(event) {
     let list = [];
-    if(localStorage.todoList !== undefined) {
+    if(localStorage.todoList != undefined) {
         list = JSON.parse(localStorage.todoList);
         for(let i=0; i<list.length; i++) {
             createCompElement(list[i].id, list[i].text, list[i].checked);
@@ -131,6 +131,14 @@ function loadHandler(event) {
     }
 }
 
+function enterSubmitHandler(event) {
+    event.preventDefault();
+    if(event.keyCode == 13) {
+        addButtonHandler();
+    }    
+}
+
 addBtn.addEventListener('click', addButtonHandler);
 clearBtn.addEventListener('click', clearButtonHandler);
 window.addEventListener('load',loadHandler);
+window.addEventListener('keyup', enterSubmitHandler);
